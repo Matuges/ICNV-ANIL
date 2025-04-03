@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +7,12 @@
 }
 
 header {
-    height: 160px;
+    height: 120px;
 }
 
 .header {
     max-width: 1300px;
-    height: 160px;
+    height: 120px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -22,9 +24,53 @@ header {
 
 .menu {
     flex:1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu ul,
+.menu li {
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    height: 120px;
+    align-items: center;
+    border-bottom: 5px solid white;
+}
+
+.menu li a:hover {
+    border-bottom: 5px solid rgb(43, 43, 43);
+    transition: 0.5s;
 }
 
 .logoimg {
     height: 53px;
     width: 451px;
+}
+
+.banner {
+    height:calc(800px - 100px);
+    background-color: rgb(69, 69, 69);
+    background-image: url('../images/Background2.jpg');
+    background-size: cover;
+}
+
+.introduction {
+    background-image: linear-gradient(140deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.784), rgba(0, 0, 0, 0));
+    background-size: cover;
+    height: inherit;
 }
