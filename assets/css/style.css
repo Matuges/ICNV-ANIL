@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 160px;
+}
+
+.header {
+    max-width: 1300px;
+    height: 160px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 470px;
+}
+
+.menu {
+    flex:1;
+}
+
+.logoimg {
+    height: 53px;
+    width: 451px;
+}
