@@ -6,6 +6,9 @@
     box-sizing: border-box;
 }
 
+
+/* HEADER */
+
 header {
     height: 120px;
 }
@@ -21,6 +24,13 @@ header {
 .logo {
     width: 470px;
 }
+
+.logoimg {
+    height: 53px;
+    width: 451px;
+}
+
+/* HEADER MENU */
 
 .menu {
     flex:1;
@@ -57,10 +67,7 @@ header {
     transition: 0.5s;
 }
 
-.logoimg {
-    height: 53px;
-    width: 451px;
-}
+/* MAIN */
 
 .banner {
     height:calc(800px - 100px);
@@ -69,8 +76,58 @@ header {
     background-size: cover;
 }
 
-.introduction {
+.gradient {
     background-image: linear-gradient(140deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.784), rgba(0, 0, 0, 0));
     background-size: cover;
     height: inherit;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 700px;
+    justify-content: flex-start;
+    padding: 60px;
+    padding-top: 130px
+}
+
+.inttext {
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+.inttext h1 {
+    font-weight: bold;
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.inttext p {
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 28px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons button {
+    text-transform: uppercase;
+    background-color: rgba(240, 248, 255, 0);
+    border: solid, 2px, white;
+    border-radius: 20px;
+    font-family:"Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+    padding: 9px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 30px;
+    margin-top: 30px;
 }
