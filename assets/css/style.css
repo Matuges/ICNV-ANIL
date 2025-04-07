@@ -30,6 +30,8 @@ header {
     width: 451px;
 }
 
+
+
 /* HEADER MENU */
 
 .menu {
@@ -74,7 +76,7 @@ header {
 /* MAIN BANNER */
 
 .banner {
-    height:calc(800px - 100px);
+    height:calc(860px - 100px);
     background-color: rgb(69, 69, 69);
     background-image: url('../images/Background2.jpg');
     background-size: cover;
@@ -91,9 +93,8 @@ header {
     flex-direction: column;
     width: 800px;
     height: 700px;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 60px;
-    padding-top: 130px
 }
 
 .inttext {
@@ -211,7 +212,59 @@ span {
 
 /* FOOTER */
 
-footer section div {
-    background-color: rgb(44, 44, 44);
+.footer-container{
+    background-color: #414141;
     height: 250px;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    width: 90%;
+    height: 150px;
+    background-color: #414040;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: "Inter", sans-serif;;
+}
+
+.footer img {
+    width: 150px;
+}
+
+.footer-heading{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+.footer-heading h2 {
+
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+
+}
+
+
+.footer-heading ul{
+    list-style: none;
+}
+.footer-heading li {
+    color: #ffffffa6;
+    
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer-heading a:hover{
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.footer-heading a {
+    color:#ffffffa6 ;
+    text-decoration: none;
 }
