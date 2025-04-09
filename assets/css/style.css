@@ -34,6 +34,10 @@ header {
 
 /* HEADER MENU */
 
+.menu-opener {
+    display:none;
+}
+
 .menu {
     flex:1;
     display: flex;
@@ -227,7 +231,6 @@ span {
     color: white;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     font-family: "Inter", sans-serif;;
 }
 
@@ -267,4 +270,173 @@ span {
 .footer-heading a {
     color:#ffffffa6 ;
     text-decoration: none;
+}
+
+
+/* TABLET */
+
+@media (min-width:450px) and (max-width:800px) {
+
+    
+    .logo {
+        margin-left: 30px;
+    }
+
+    .menu nav {
+        position: absolute;
+        z-index: 99;
+        top: 120px;
+        right: 0px;
+        background-color: #fffffff8;
+        width: 70vw;
+        height: calc(100vh - 545px);
+        display: none;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        
+    }
+
+    .menu li a {
+        height: 120px;
+        font-size: 25px;
+        border-bottom: solid 0px black;
+        margin-left: 20px;
+    }
+
+    .menu .active a {
+        border-bottom: solid 0px black;
+        font-weight: bold;
+
+    }
+
+    .menu-opener {
+        width: 80px;
+        display: block;
+        margin-right: 20px;
+    }
+
+    .footer-container {
+        padding: 30px;
+        align-items: center;
+    }
+
+    .footer h2 {
+        font-size: 15px;
+        margin-bottom: 1rem;
+    }
+    .footer a {
+        font-size:13px;
+    }
+
+    .footer img {
+        width: 85px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:450px) {
+
+    .header {
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .menu {
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .logo {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    .logo img{
+        width: 300px;
+        height: 40px;
+    }
+
+
+    
+
+    .menu nav {
+        position: absolute;
+        z-index: 99;
+        top: 120px;
+        right: 0px;
+        background-color: #fffffff8;
+        width: 70vw;
+        height: calc(100vh - 545px);
+        display: none;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        
+    }
+
+    .menu li a {
+        height: 120px;
+        font-size: 25px;
+        border-bottom: solid 0px black;
+        margin-left: 20px;
+    }
+
+    .menu .active a {
+        border-bottom: solid 0px black;
+        font-weight: bold;
+
+    }
+
+    .menu-opener {
+        width: 80px;
+        display: block;
+    }
+
+    .introduction {
+        width: 100vw;
+    }
+
+    .banner h1 {
+        font-size: 50px;
+    }
+
+    .banner p {
+        font-size: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .banner button {
+        width: 200px;
+        font-size: 14px;
+    }
+
+
+
+
+
+
+    .footer-container {
+        padding: 5px;
+        align-items: center;
+    }
+
+
+
+    .footer h2 {
+        font-size: 10px;
+        margin-bottom: 1rem;
+    }
+    .footer a {
+        font-size:10px;
+    }
+
+    .footer img {
+        display: none;
+    }
 }
