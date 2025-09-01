@@ -275,23 +275,34 @@ span {
 
 /* TABLET */
 
-@media (min-width:450px) and (max-width:800px) {
+@media (min-width:557px) and (max-width:991px) {
 
-    
+     html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* evita rolagem lateral */
+}
+
     .logo {
         margin-left: 30px;
     }
 
-    .menu nav {
+     .menu nav {
         position: absolute;
         z-index: 99;
         top: 120px;
         right: 0px;
         background-color: #fffffff8;
         width: 70vw;
-        height: calc(100vh - 545px);
-        display: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
     }
+
+    .menu nav.opened {
+        max-height: 500px;
+    }
+
 
     .menu ul {
         flex-direction: column;
@@ -317,9 +328,16 @@ span {
         margin-right: 20px;
     }
 
+      .introduction {
+        width: 100vw;
+    }
+
+
     .footer-container {
+       
         padding: 30px;
         align-items: center;
+
     }
 
     .footer h2 {
@@ -331,12 +349,21 @@ span {
     }
 
     .footer img {
-        width: 85px;
-        margin-right: 20px;
+        display: none;
     }
 }
 
-@media (max-width:450px) {
+@media (max-width:557px) {
+
+    html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* evita rolagem lateral */
+}
+
+    body {
+        width: 100vw;
+    }
 
     .header {
         width: 100vw;
@@ -349,12 +376,12 @@ span {
     }
 
     .logo {
-        width: 300px;
+        width: 70vw;
         margin-left: 20px;
     }
 
     .logo img{
-        width: 300px;
+        width: 70vw;
         height: 40px;
     }
 
@@ -368,20 +395,26 @@ span {
         right: 0px;
         background-color: #fffffff8;
         width: 70vw;
-        height: calc(100vh - 545px);
-        display: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
     }
+
+    .menu nav.opened {
+        max-height: 500px;
+    }
+
 
     .menu ul {
         flex-direction: column;
-        
+        align-items: center;
     }
 
     .menu li a {
         height: 120px;
         font-size: 25px;
         border-bottom: solid 0px black;
-        margin-left: 20px;
+        margin-left: 0px;
     }
 
     .menu .active a {
@@ -391,8 +424,9 @@ span {
     }
 
     .menu-opener {
-        width: 80px;
+        width: 50px;
         display: block;
+        margin-right: 10px
     }
 
     .introduction {
@@ -420,10 +454,23 @@ span {
 
 
 
+    .footer {
+        flex-direction: column;
+        justify-content: start;    
+        align-items:start;
+        flex-wrap: wrap;
+        height: 230px;
+    }
+
+    .footer div {
+        margin-right: 20px;
+    }
 
     .footer-container {
         padding: 5px;
+        padding-top: 10px;
         align-items: center;
+        height: 300px
     }
 
 

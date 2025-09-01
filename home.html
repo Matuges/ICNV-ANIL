@@ -15,12 +15,14 @@
 </head>
 <body>
    <header>
+
         <div class="header">
             <div class="logo">
                 <img class="logoimg" src="assets/images/logocompleta.png" alt="Igreja cristã nova vida anil">
             </div>
             <div class="menu">
-                <img class="menu-opener" src="assets/images/menu.jpg" alt="">
+                <img class="menu-opener" src="assets/images/menu.jpg" alt="" role="button" >
+                
                 <nav>
                     <ul>
                         <li class="active"><a href="">Home</a></li>
@@ -31,7 +33,18 @@
                 </nav>
             </div>
         </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const opener = document.querySelector(".menu-opener");
+                const nav = document.querySelector(".menu nav");
+
+                opener.addEventListener("click", function () {
+                nav.classList.toggle("opened");
+                });
+            });
+        </script>
    </header>
+   
    <main>
         <section class="banner">
             <div class="gradient">
