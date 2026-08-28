@@ -1,0 +1,4 @@
+icnvanil.com.br {
+    root * /srv
+    file_server
+}
